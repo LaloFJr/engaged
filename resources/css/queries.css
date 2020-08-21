@@ -64,6 +64,13 @@
 	body { font-size: 14px; }
 	section {padding: 10px 0; }
 
+
+	header {
+		max-height: 90%;
+		max-width: 90%;
+	}
+
+
 }
 
 
