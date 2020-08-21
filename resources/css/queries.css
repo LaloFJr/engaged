@@ -61,12 +61,8 @@
 
 /* Small phones from 0 to 480px */
 @media only screen and (max-width: 480px) {
-	header {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/together.jpg);
-		background-size: auto
-		background-attachment: fixed;
-	}
-
+	body { font-size: 14px; }
+	section {padding: 10px 0; }
 
 }
 
