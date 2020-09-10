@@ -1,13 +1,16 @@
 /* Big tablets to 1200px: widths smaller than the 1140px row */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 2560px) {
+	.row {
+		max-width: 2560px;
+	}
 
-	
+
 
 }
 
 /* Small tablets to big tablets: from 768px to 1023px */
-@media only screen and (max-width: 1023px) {
-	body { font-size: 18px; }
+@media only screen and (max-width: 1024px) {
+	/* body { font-size: 18px; } */
 	section {padding: 60px 0;}
 
 	.text-box {
@@ -60,8 +63,84 @@
 }
 
 /* Small phones from 0 to 480px */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+	h1{
+		font-size: 200%;
+		color: #ecf0f1;
+		margin-bottom: 10px;
+		margin: 0;
+		margin-bottom: 5px;
+		word-spacing: 2px;
+		letter-spacing: 4px;
+		opacity: 0.8;
+	}
+
+	h2 {
+		font-size: 100%;
+		word-spacing: 1px;
+		margin-bottom: 15px;
+	}
 	
+	h2:after {
+		margin-top: 20px;
+	}
+	
+	h3 {
+	word-spacing: 2px;
+	letter-spacing: 3px;
+	}
+
+	.box {
+		margin-top: 15px;
+		width: 100%;
+		margin: auto;
+		text-align: left;
+	}
+
+	.box ul li {
+		font-size:100%;
+		margin: 5px 0;
+		word-spacing: 1px;
+		letter-spacing: 1px;
+		
+	}
+
+	.icon-small {
+		font-size: 150%;
+		margin-right: 5px;
+		line-height: 120%;
+		vertical-align: middle;
+		margin-top: -3px;
+	}
+
+	.reserve-form {
+		width: 70%;
+		margin: 20px auto;
+	}
+	
+	select {
+		width: 35%;
+		padding: 5px;
+	}
+
+
+	.gift-info {
+		text-align: center;
+	}
+
+	footer {
+		padding: 25px;
+		font-size: 60%;
+	}
+	
+	
+	.footer-nav li {
+		margin-right: 10px;
+	}
+		
+	footer p {
+		margin-top: 10px;
+	}
 
 }
 
