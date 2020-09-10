@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 5 version
+*/
+
 /* 
 	 #9b59b6;
 */
@@ -10,7 +17,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 html,
@@ -49,6 +57,8 @@ section { padding: 80px 0; }
 /* --------------------------- */
 
 header {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/together.jpg);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/together.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/together.jpg);
 	background-size: cover;
 	background-position: center;
@@ -100,7 +110,8 @@ header {
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.90);
 	z-index: 9999;
-	box-shadow: 0 2px 2px #efefef;
+	-webkit-box-shadow: 0 2px 2px #efefef;
+	        box-shadow: 0 2px 2px #efefef;
 }
 
 .sticky .main-nav { 
@@ -119,7 +130,9 @@ header {
     width: 600px;
     top: 50%;
     left: 25%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -205,6 +218,8 @@ input[type=submit] {
 	font-weight: 300;
 	text-decoration: none;
 	border-radius: 150px;
+	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+	-o-transition: background-color 0.2s, border 0.2s, color 0.2s;
 	transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -309,14 +324,24 @@ input[type=submit]:active {
 	opacity: 0.7;
 	width: 100%;
 	height: auto;
-	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	    -ms-transform: scale(1.15);
+	        transform: scale(1.15);
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
 	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
+	-o-transition: transform 0.5s, opacity 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .us-photo img:hover {
 	opacity: 1.0;
-	transform: scale(1.09);
+	-webkit-transform: scale(1.09);
+	    -ms-transform: scale(1.09);
+	        transform: scale(1.09);
 }
 
 .section-story {
@@ -366,6 +391,8 @@ a:visited {
 	text-decoration: none;
 	padding-bottom: 1px;
 	border-bottom: 1px solid #9b59b6;
+	-webkit-transition: border-bottom 0.2s color 0.2s;
+	-o-transition: border-bottom 0.2s color 0.2s;
 	transition: border-bottom 0.2s color 0.2s;
 }
 
@@ -391,6 +418,8 @@ a:active {
 /* -------------------------------- */
 
 .section-party {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/hall.jpeg);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/hall.jpeg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/hall.jpeg);
 	background-size: cover;
 	background-position: center;
@@ -446,16 +475,3 @@ footer p {
 	text-align: center;
 	margin-top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
