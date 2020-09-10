@@ -66,6 +66,17 @@
 
 /* Small phones from 0 to 480px */
 @media screen and (max-width: 480px) {
+
+	header {
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/small-together.jpg);
+		background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/small-together.jpg);
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/small-together.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		height: 100vh;
+	}
+
 	h1{
 		font-size: 200%;
 		color: #ecf0f1;
