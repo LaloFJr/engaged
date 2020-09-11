@@ -427,8 +427,9 @@ a:active {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	height: 100%;
+	height: 100vh;
 	color: rgba(255, 255, 255, 0.92);
+	overflow: scroll;
 }
 
 /* -------------------------------- */
